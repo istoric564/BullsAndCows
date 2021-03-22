@@ -3,8 +3,8 @@
 import java.util.*;
 
 
-public class Main3 {
-    public static void main(String[] args) throws Exception {
+public class BullsAndCowsGame {
+    public static void main(String[] args)  {
         Scanner scanner = new Scanner(System.in);
         int[] computerNumbers = new int[4];
         int[] userAnswer = new int[4];
@@ -25,8 +25,8 @@ public class Main3 {
                 }
             }
         }
-        for (int i = 0; i < computerNumbers.length; i++) {
-            System.out.print(computerNumbers[i]);
+        for (int computerNumber : computerNumbers) {
+            System.out.print(computerNumber);
         }
         System.out.println(" Игра Быки и коровы");
         System.out.println(" Тебе нужно ввести четыре числа от 1 до 9 без повторяющихся чисел ");
@@ -51,7 +51,6 @@ public class Main3 {
                     System.out.println("Ошибка: введено число меньше 1 или больше 9");
 //                Уменьшаем счетчик попыток
                     userAttempts--;
-                    continue;
                 }
             }
             try {
@@ -80,21 +79,6 @@ public class Main3 {
                     countCows++;
                 }
             }
-//        Проверка значения коров.
-//            for (int i = 0; i < userAnswer.length; i++) {
-//                if (list.contains(computerNumbers[i])){
-//                    countCows++;
-//                }
-//            }
-//            for (int j : userAnswer) {
-//                System.out.print(j);
-//            }
-//            System.out.println("|");
-//            for (int computerNumber : computerNumbers) {
-//                System.out.print(computerNumber);
-//            }
-//            System.out.println("|");
-
             System.out.println("Bulls: " + countBulls);
             System.out.println("Cows: " + countCows);
             if (countBulls == 4) {
