@@ -29,7 +29,7 @@ public class BullsAndCowsGame {
             System.out.print(computerNumber);
         }
         System.out.println(" Игра Быки и коровы");
-        System.out.println(" Тебе нужно ввести четыре числа от 1 до 9 без повторяющихся чисел ");
+        System.out.println(" Тебе нужно ввести четыре цифры от 1 до 9 без повторяющихся чисел ");
         System.out.println(" У тебя безлимитное количество попыток. Удачи победитель :)");
 
         for (int userAttempts = 1; ; userAttempts++) {
